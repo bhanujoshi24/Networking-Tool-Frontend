@@ -1,0 +1,65 @@
+/* SetDB.css */
+
+/* Styles for the SetDB component */
+
+h2 {
+    color: #333;
+  }
+  
+  label {
+    display: inline-block;
+    margin-bottom: 10px;
+
+  }
+  
+  select,
+  input,
+  button {
+    display: inline-block;
+    margin-bottom: 15px; /* Ensure elements are displayed as blocks to avoid layout issues */
+  }
+  
+  /* Adjust styles for the file input */
+  input[type="file"] {
+    width: 100%; /* Set the width to 100% to ensure full visibility */
+    padding: 8px; /* Add padding for better appearance */
+    display: inline-block;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Scrollable table container styles */
+  .scrollable-table-container {
+    max-height: 250px; /* Set the maximum height you desire */
+    overflow-y: auto;
+    border: 1px solid #ddd; /* Add a border for a cleaner look */
+  }
+  

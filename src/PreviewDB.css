@@ -1,0 +1,180 @@
+/* Styles for the PreviewDB component */
+
+.table-container {
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  position: relative; /* Ensure relative positioning for z-index */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative; /* Ensure relative positioning for z-index */
+  z-index: 1; /* Set a z-index value */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  position: relative; /* Ensure relative positioning for z-index */
+  z-index: 2; /* Set a higher z-index value */
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+
+/* PreviewDB.css */
+
+.container {
+margin: 20px;
+}
+
+.filter-container {
+margin-bottom: 20px;
+}
+
+.filter-container label {
+  display: inline-block;
+margin-right: 10px;
+}
+
+.filter-container input {
+  display: inline-block;
+width: 10vw;
+padding: 5px;
+margin-right: 10px;
+}
+
+.filter-container select {
+  display: inline-block;
+width: 11vw;
+padding: 5px;
+margin-right: 10px;
+}
+
+.table-container table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+position: relative; /* Ensure relative positioning for z-index */
+}
+
+.table-container th,
+.table-container td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: left;
+position: relative; /* Ensure relative positioning for z-index */
+z-index: 2; /* Set a higher z-index value */
+}
+
+.pagination-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 20px;
+}
+
+.pagination-container button {
+padding: 8px;
+width: 100px;
+cursor: pointer;
+}
+
+.pagination-container span {
+font-weight: bold;
+}
+
+
+.update-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 3; /* Set a higher z-index value */
+}
+
+.update-form-container {
+background: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+z-index: 4; /* Set a higher z-index value */
+}
+
+.update-form-container input{
+  width: 10vw;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.update-submit-button {
+  display: inline-block;
+  padding: 8px 16px; /* Adjust padding as needed */
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #050505; /* Button border color */
+  border-radius: 4px; /* Adjust border-radius as needed */
+  color: #000000; /* Button text color */
+  background-color: #9ffc5d; /* Button background color */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin-right: 10px;
+}
+
+.update-submit-button:hover {
+  background-color: #107d02; /* Hover background color */
+  color: #fff; /* Hover text color */
+  border-color: #010101; /* Hover border color */
+}
+
+
+.update-cancel-button{
+  display: inline-block;
+  padding: 8px 16px; /* Adjust padding as needed */
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #050505; /* Button border color */
+  border-radius: 4px; /* Adjust border-radius as needed */
+  color: #000000; /* Button text color */
+  background-color: #f13f04; /* Button background color */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.update-cancel-button:hover{
+  background-color: #860601; /* Hover background color */
+  color: #fff; /* Hover text color */
+  border-color: #000000; /* Hover border color */
+}
